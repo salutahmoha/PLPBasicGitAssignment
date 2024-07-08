@@ -1,0 +1,80 @@
+/* styles.css */
+
+/* Reset default browser margin and padding */
+body, h1, p, form, input {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a global font family */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main section */
+section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Style form elements */
+form {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    /* Adjust styles for tablets and smaller screens */
+    section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for mobile phones */
+    section {
+        margin: 10px;
+    }
+}
